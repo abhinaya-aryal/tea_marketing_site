@@ -1,0 +1,940 @@
+ @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
+ * {
+     padding: 0;
+     margin: 0;
+     font-family: 'IBM Plex Sans', sans-serif;
+     font-size: 16px;
+ }
+ 
+ html {
+     scroll-behavior: smooth;
+     background-color: rgb(235, 245, 243);
+ }
+ 
+ .mainNavigation {
+     z-index: 9999;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     height: 70px;
+     font-weight: 600;
+     position: fixed;
+     top: 0px;
+     background-color: rgb(235, 245, 243);
+ }
+ 
+ .logo {
+     flex: 0.9;
+     padding-left: 30px;
+     font-size: 24px;
+     color: gold;
+ }
+ 
+ .tea {
+     font-size: 44px;
+     font-weight: 200;
+     cursor: pointer;
+ }
+ 
+ .navigationLink {
+     flex: 1;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+ }
+ 
+ .navElement {
+     cursor: pointer;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ 
+ .homeicon {
+     background-image: url(images/homeicon.png);
+     height: 25px;
+     width: 25px;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+ 
+ .exploreicon {
+     background-image: url(images/airplay.png);
+     height: 25px;
+     width: 25px;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+ 
+ .buyicon {
+     background-image: url(images/check-square.png);
+     height: 25px;
+     width: 25px;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+ 
+ .contacticon {
+     background-image: url(images/phone.png);
+     height: 25px;
+     width: 25px;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+ 
+ .cartContainer {
+     cursor: pointer;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: white;
+     height: 50px;
+     width: 50px;
+     border-radius: 100%;
+ }
+ 
+ .carticon {
+     height: 18px;
+     width: 18px;
+     background-image: url(images/shopping-cart.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+ 
+ .homeMain {
+     margin-top: 80px;
+     display: flex;
+     height: 600px;
+     width: 100%;
+     margin-bottom: 80px;
+ }
+ 
+ .homeLeft {
+     display: flex;
+     flex-direction: column;
+     flex: 3;
+     background-image: url(images/home.png);
+     height: 100%;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ 
+ .greeting {
+     margin: 80px 60px;
+     font-size: 48px;
+     font-weight: bolder;
+     max-width: 550px;
+ }
+ 
+ .getCup {
+     cursor: pointer;
+     background-color: #E7D400FF;
+     padding: 10px 10px;
+     font-size: 30px;
+     font-weight: 700;
+     border-radius: 8px;
+     width: max-content;
+     margin-left: 100px;
+     margin-top: 80px;
+     color: rgba(77, 75, 75, 0.795);
+ }
+ 
+ .homeRight {
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     font-weight: 600;
+ }
+ 
+ .heading {
+     text-align: center;
+     padding: 0 5px;
+     font-size: 24px;
+     font-weight: 700;
+     color: rgb(73, 72, 72);
+ }
+ 
+ .containers {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     font-size: 18px;
+ }
+ 
+ .nutritionalValue {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     justify-content: space-around;
+ }
+ 
+ .containerContent {
+     display: flex;
+     height: 70px;
+     width: 70px;
+     background-color: white;
+     border-radius: 100%;
+     justify-content: center;
+     align-items: center;
+     font-size: 18px;
+ }
+ 
+ .valueOne {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     margin: 30px 0;
+ }
+ 
+ .exploreMain {
+     display: flex;
+     height: fit-content;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .exploreLeft {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     flex: 1;
+ }
+ 
+ .exploreRight {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex: 1;
+     flex-shrink: 0;
+ }
+ 
+ .exploreImage {
+     background-image: url(images/explore1.png);
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center;
+     width: 100%;
+     height: 540px;
+ }
+ 
+ .topic {
+     font-size: 30px;
+     font-weight: 900;
+     color: #5E905D;
+     max-width: 500px;
+ }
+ 
+ .para {
+     margin-top: 50px;
+     max-width: 500px;
+     font-size: 24px;
+     font-weight: 500;
+ }
+ 
+ .exploretwo {
+     margin-top: 20px;
+     display: flex;
+ }
+ 
+ .explore2Left {
+     flex: 1;
+     background-image: url(images/explore2.png);
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center;
+     height: 390px;
+ }
+ 
+ .explore2image {
+     display: none;
+ }
+ 
+ .explore2Right {
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: left;
+     padding: 0 10px;
+ }
+ 
+ .topic2 {
+     color: rgba(190, 56, 0, 1);
+     font-size: 30px;
+     font-weight: 900;
+     max-width: 500px;
+ }
+ 
+ .health {
+     margin-top: 30px;
+     width: 100%;
+     background-color: #D3CAC1FF;
+ }
+ 
+ .healthImage {
+     display: flex;
+     height: 800px;
+     background-image: url(images/heath.png);
+     background-position: center;
+     background-size: contain;
+     background-repeat: no-repeat;
+ }
+ 
+ .sellTea {
+     height: fit-content;
+     min-width: 300px;
+     border: 2px double gray;
+     margin-bottom: 25px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+ 
+ .buyMain {
+     display: flex;
+     margin-top: 50px;
+     flex-direction: column;
+ }
+ 
+ .buyTop,
+ .buyBottom {
+     display: flex;
+     justify-content: space-evenly;
+     margin-bottom: 50px;
+     flex-wrap: wrap;
+ }
+ 
+ .image {
+     background-image: url(images/tea.png);
+     height: 250px;
+     width: 100%;
+     background-position: center;
+     background-size: contain;
+     background-repeat: no-repeat;
+ }
+ 
+ .price {
+     display: flex;
+     justify-content: space-around;
+     font-size: 20px;
+ }
+ 
+ .price div {
+     margin: 10px;
+ }
+ 
+ .present {
+     font-weight: 800;
+ }
+ 
+ .previous {
+     font-weight: 800;
+     color: gray;
+     text-decoration: line-through;
+ }
+ 
+ .discount {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 4px 10px;
+     font-size: 12px;
+     font-weight: 800;
+     background-color: gold;
+     border-radius: 60px;
+ }
+ 
+ .detail {
+     font-weight: 500;
+     font-size: 14px;
+     margin-bottom: 5px;
+ }
+ 
+ .addCart {
+     cursor: pointer;
+     font-size: 14px;
+     font-weight: 500;
+     color: rgb(70, 68, 68);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 1px solid black;
+     width: 92%;
+     border-radius: 10px;
+     margin-bottom: 10px;
+     padding: 5px 0;
+ }
+ 
+ .buyNow {
+     cursor: pointer;
+     font-size: 14px;
+     background-color: gold;
+     font-weight: 500;
+     color: rgb(70, 68, 68);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 92%;
+     border-radius: 10px;
+     margin-bottom: 10px;
+     padding: 5px 0;
+ }
+ 
+ .allDeals {
+     cursor: pointer;
+     font-weight: 900;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: gold;
+     width: max-content;
+     margin: auto;
+     padding: 5px 10px;
+     border-radius: 8px;
+ }
+ 
+ .deals {
+     font-size: 28px;
+ }
+ 
+ .play {
+     background-image: url(images/play.png);
+     height: 45px;
+     width: 25px;
+     padding-left: 15px;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+ 
+ .contactMain {
+     margin: 40px 0;
+ }
+ 
+ .headingContact {
+     font-size: 44px;
+     font-weight: 900;
+     color: green;
+     margin-left: 5%;
+ }
+ 
+ .formContainer {
+     display: flex;
+     padding: 60px;
+     flex: 1.5;
+     margin-top: 40px;
+     height: fit-content;
+     border-top: 8px solid black;
+     border-left: 8px solid black;
+     margin-bottom: 0;
+ }
+ 
+ .contactBody {
+     display: flex;
+ }
+ 
+ .facebook,
+ .instagram,
+ .github {
+     cursor: pointer;
+ }
+ 
+ .empty {
+     flex: 0.3;
+ }
+ 
+ .name {
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .name label {
+     font-size: 20px;
+     font-weight: 800;
+     color: white;
+ }
+ 
+ .formContent {
+     padding: 80px 20px;
+     width: 100%;
+     position: relative;
+     text-align: left;
+     opacity: 1;
+     display: flex;
+ }
+ 
+ .formContent::before {
+     content: "";
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     top: 0;
+     left: 0;
+     background-image: url(https://images.unsplash.com/photo-1433704334812-6c45b0b8784d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     filter: brightness(55%);
+     z-index: -1;
+ }
+ 
+ .formContent div {
+     margin-bottom: 8px;
+ }
+ 
+ .name input {
+     border: none;
+     background-color: transparent;
+     border-bottom: 4px solid white;
+     outline: none;
+     color: white;
+     font-size: 20px;
+     font-weight: 700;
+     width: 300px;
+ }
+ 
+ .usContact {
+     cursor: pointer;
+     margin-top: 35px;
+     font-weight: 600;
+     font-size: 20px;
+     color: black;
+     background-color: gold;
+     padding: 5px 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 5px;
+     width: 300px;
+ }
+ 
+ .contentLeft {
+     flex: 1;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+ 
+ .reachUs {
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+     color: white;
+     padding: 0 40px;
+ }
+ 
+ .reachHeading {
+     font-size: 24px;
+     font-weight: 700;
+ }
+ 
+ .email {
+     padding-bottom: 10px;
+     width: max-content;
+     border-bottom: 2px solid rgb(209, 205, 205);
+ }
+ 
+ .email a {
+     font-size: 18px;
+     color: white;
+     text-decoration: none;
+     font-weight: 500;
+ }
+ 
+ .media {
+     display: flex;
+     width: max-content;
+ }
+ 
+ .media div {
+     margin: 0 10px;
+ }
+ 
+ .facebook {
+     background-image: url(images/Vector.png);
+     height: 24px;
+     width: 24px;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+ 
+ .instagram {
+     background-image: url(images/instagram.png);
+     height: 24px;
+     width: 24px;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+ 
+ .github {
+     background-image: url(images/Vector2.png);
+     height: 24px;
+     width: 24px;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+ 
+ .lastMain {
+     height: 400px;
+     display: flex;
+     justify-content: center;
+     border-top: 5px solid white;
+     margin-top: 0;
+     padding: 10px;
+     overflow: hidden;
+ }
+ 
+ .circle {
+     display: flex;
+     flex-direction: column;
+     height: 800px;
+     width: 800px;
+     background-color: #333333FF;
+     border-radius: 100%;
+ }
+ 
+ .footerAll {
+     width: 100%;
+     margin-top: 30px;
+     display: flex;
+     align-self: center;
+     justify-content: space-evenly;
+ }
+ 
+ .logo2 {
+     flex: none;
+     height: max-content;
+     width: max-content;
+     display: flex;
+     align-items: center;
+     margin-left: 95px;
+     font-size: 68px;
+ }
+ 
+ .logo2 span {
+     font-size: 98px;
+ }
+ 
+ .subscribeMain {
+     display: flex;
+     flex-direction: column;
+     color: white;
+     height: fit-content;
+     width: max-content;
+ }
+ 
+ .subscribeTopic {
+     font-size: 20px;
+     font-weight: 600;
+ }
+ 
+ .subscribeInput {
+     margin-top: 10px;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .media2 {
+     margin-top: 5px;
+ }
+ 
+ .subscribeInput input {
+     outline: none;
+     background-color: transparent;
+     border: none;
+     border-bottom: 3px solid white;
+     color: white;
+ }
+ 
+ .subscribeButton {
+     cursor: pointer;
+     background-color: gold;
+     margin-top: 20px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 5px 0;
+     border-radius: 10px;
+     font-weight: 700;
+ }
+ 
+ .subscribeInput label {
+     font-weight: 500;
+ }
+ 
+ .copyright {
+     display: flex;
+     align-items: center;
+     margin-top: 30px;
+ }
+ 
+ .reach2 {
+     flex: none;
+     padding: 0;
+ }
+ 
+ .active {
+     color: green;
+     text-decoration: 2px underline double green;
+ }
+ 
+ .navElement .elementName {
+     font-family: 'IBM Plex Sans', sans-serif;
+     font-weight: 900;
+ }
+ 
+ a {
+     text-decoration: none;
+     color: black;
+ }
+ 
+ .alert {
+     position: absolute;
+     display: none;
+     justify-content: center;
+     align-items: center;
+     height: 100px;
+     width: fit-content;
+     border: 2px solid black;
+     /* padding: 0 10px; */
+     font-size: 20px;
+     background-color: rgba(0, 0, 0, 0.7);
+     color: white;
+     font-weight: 600;
+ }
+ 
+ .close {
+     order: 2;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+     font-weight: 900;
+     align-self: flex-start;
+     justify-self: flex-end;
+     padding: 3px 8px;
+     border: 1px solid gray;
+     margin: 0 0;
+ }
+ 
+ .close:hover {
+     background-color: red;
+ }
+ 
+ .errReply {
+     order: 1;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     justify-self: center;
+     align-self: center;
+     min-width: 200px;
+ }
+ 
+ @media(max-width:800px) {
+     html {
+         background-color: rgb(226, 247, 243);
+     }
+     .logo {
+         flex: 100%;
+         background-color: rgb(226, 247, 243);
+         margin: 0 0;
+         height: max-content;
+         padding: 0 5px;
+     }
+     .navigationLink {
+         height: 60px;
+         width: 100%;
+         position: fixed;
+         bottom: 0;
+         background-color: rgb(226, 247, 243);
+         z-index: 999;
+     }
+     .mainNavigation {
+         height: fit-content;
+         margin: 0;
+         height: 60px;
+     }
+     .tea {
+         color: rgb(255, 217, 0);
+         font-size: 40px;
+     }
+     #home {
+         order: 1;
+     }
+     #explore {
+         order: 2;
+     }
+     #cart {
+         order: 3;
+     }
+     #buy {
+         order: 4;
+     }
+     #contactUs {
+         order: 5;
+     }
+     .cartContainer {
+         border: 3px solid green;
+         background-color: gold;
+         height: 45px;
+         width: 45px;
+     }
+     .carticon {
+         height: 20px;
+         width: 20px;
+         background-image: url(images/shopping-cart2.png);
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: contain;
+     }
+     .homeMain {
+         flex-wrap: wrap;
+         margin: 0;
+         height: fit-content;
+     }
+     .homeLeft {
+         background-image: url(images/teamobile.jpg);
+         flex: 100%;
+         height: 730px;
+         align-items: center;
+         justify-content: space-evenly;
+     }
+     .greeting {
+         max-width: 350px;
+         font-size: 32px;
+         width: 100%;
+     }
+     .getCup {
+         margin-left: 0;
+         color: black;
+     }
+     .homeRight {
+         flex: 100%;
+         margin-top: 20px;
+     }
+     .heading {
+         max-width: 300px;
+         padding: 0;
+     }
+     .exploreMain {
+         flex-direction: column;
+         margin-top: 20px;
+         margin-bottom: 0;
+     }
+     .exploreLeft {
+         width: 100%;
+         text-align: center;
+     }
+     .exploreRight {
+         width: 100%;
+     }
+     .exploreImage {
+         width: 100%;
+         margin: 0;
+         padding: 0;
+         height: 500px;
+     }
+     .para {
+         margin-top: 15px;
+     }
+     .exploretwo {
+         margin-top: 0;
+         flex-direction: column-reverse;
+         height: 600px;
+     }
+     .explore2Left {
+         flex: 100%;
+         width: 100%;
+     }
+     .explore2Right {
+         width: 100%;
+         text-align: center;
+         margin: 0;
+         padding: 0;
+     }
+     .topic,
+     .topic2 {
+         width: 100%;
+     }
+     .healthImage {
+         height: 500px;
+     }
+     .empty {
+         display: none;
+     }
+     .contactMain {
+         margin: 40px 0;
+     }
+     .headingContact {
+         font-size: 40px;
+         margin-left: 0;
+         padding-left: 5px;
+     }
+     .formContainer {
+         padding: 0px;
+         flex: 100%;
+         margin-top: 5px;
+         margin-bottom: 28px;
+         border: none;
+         border-top: 8px solid black;
+         border-bottom: 8px solid black;
+     }
+     .formContent {
+         padding: 20px 0;
+         justify-content: center;
+         flex-direction: column;
+         align-items: center;
+     }
+     .formContent div {
+         margin-bottom: 10px;
+     }
+     .usContact {
+         padding: 5px 0;
+     }
+     .reachUs {
+         margin-top: 20px;
+         align-items: center;
+     }
+     .lastMain {
+         display: none;
+     }
+     .healthImage {
+         width: 100%;
+         height: 400px;
+         background-size: cover;
+         background-position: left;
+     }
+     .buyTop {
+         margin-bottom: 0;
+     }
+     .buyBottom {
+         margin: 0;
+     }
+     .allDeals {
+         margin-top: 0;
+     }
+ }
+ 
+ @media(min-width:600px) and (max-width:800px) {
+     .healthImage {
+         height: 600px;
+     }
+ }
